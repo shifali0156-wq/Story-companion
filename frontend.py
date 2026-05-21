@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 import uuid
 
-BASE_URL = "https://paru-73-rag-chatbot-using-fastapi.hf.space"
+BASE_URL = "https://paru-73-Story-companion.hf.space"
 
 st.set_page_config(page_title="RAG Chatbot", layout="wide")
 
