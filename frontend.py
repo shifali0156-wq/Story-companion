@@ -48,27 +48,25 @@ if st.session_state.selected_story is None:
                     st.session_state.messages = []
                     st.rerun()
 
-    st.markdown("---")
+    st.sidebar.header("➕ Create New Story")
 
-    st.markdown("## + Upload New Story")
-
-    story_name = st.text_input(
+    story_name = st.sidebar.text_input(
         "Story Name"
     )
 
-    uploaded_files = st.file_uploader(
+    uploaded_files = st.sidebar.file_uploader(
         "Upload Story Files",
         type=["pdf", "docx", "txt", "pptx"],
         accept_multiple_files=True
     )
 
-    if st.button("Create Story"):
+    if st.sidebar.button("Create Story"):
 
         if not story_name:
-            st.warning("Please enter story name")
+            st.sidebar.warning("Please enter story name")
 
         elif not uploaded_files:
-            st.warning("Please upload files")
+            st.sidebar.warning("Please upload files")
 
         else:
 
@@ -93,11 +91,16 @@ if st.session_state.selected_story is None:
             )
 
             if res.status_code == 200:
-                st.success("Story uploaded successfully!")
+
+                st.sidebar.success(
+                    "Story uploaded successfully!"
+                )
+
                 st.rerun()
 
             else:
-                st.error(res.text)
+
+                st.sidebar.error(res.text)
 
 else:
 
