@@ -11,7 +11,30 @@ st.title("RAG Chatbot (Multi-Document)")
 st.session_state.session_id = "default_user"
 
 if "messages" not in st.session_state:
-    st.session_state.messages = []
+
+    res = requests.get(
+        f"{BASE_URL}/history/{st.session_state.session_id}"
+    )
+
+    if res.status_code == 200:
+        data = res.json()
+
+        st.session_state.messages = []
+
+        for item in data["messages"]:
+
+            if item["role"] == "user":
+                st.session_state.messages.append(
+                    ("user", item["message"])
+                )
+
+            else:
+                st.session_state.messages.append(
+                    ("bot", item["message"])
+                )
+
+    else:
+        st.session_state.messages = []
 
 
 st.sidebar.header("Documents")
