@@ -1,0 +1,15 @@
+langchain_text_splitters
+langchain_huggingface
+langchain_chroma
+langchain_core
+langchain_community
+langchain_google_genai
+langchain_classic
+pypdf
+python-dotenv
+fastapi
+uvicorn
+sentence-transformers
+docx2txt
+unstructured
+python-pptx
