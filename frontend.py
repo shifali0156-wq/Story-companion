@@ -8,8 +8,7 @@ st.set_page_config(page_title="Writer's Story Companion", layout="wide")
 
 st.title("RAG Chatbot (Multi-Document)")
 
-if "session_id" not in st.session_state:
-    st.session_state.session_id = str(uuid.uuid4())
+st.session_state.session_id = "default_user"
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
