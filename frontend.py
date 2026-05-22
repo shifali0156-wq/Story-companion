@@ -28,7 +28,7 @@ if st.session_state.selected_story is None:
     for idx, story in enumerate(stories):
         with cols[idx % 3]:
             with st.container(border=True):
-                st.markdown("## story")
+                st.markdown(f"## {story}")
                 if st.button("Open Story",key=f"open_{story}"):
                     st.session_state.selected_story = story
                     st.session_state.messages = []
