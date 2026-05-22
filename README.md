@@ -4,12 +4,12 @@ Writer’s Story Companion is an AI-powered\ fiction assistant designed to help 
 
 Large novels can easily exceed the context window of an LLM, making it impossible to send the entire story directly to the model. To solve this, the application stores uses RAG which retrieves only the most relevant narrative context for each user query.
 
-# Live Demo
+## Live Demo
 
-## Frontend (Streamlit)
+### Frontend (Streamlit)
 https://story-companion-bfabugythims3odauzf5qv.streamlit.app/
 
-## Backend API (FastAPI)
+### Backend API (FastAPI)
 [https://your-fastapi-space.hf.space](https://paru-73-Story-companion.hf.space)
 
 ## Features
