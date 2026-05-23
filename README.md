@@ -69,8 +69,8 @@ Each story has:
 
 1. Clone Repository
 ```bash
-git clone <your_repo_url>
-cd <repo_name>
+git clone https://github.com/shifali0156-wq/Story-companion.git
+cd Story-Companion
 ```
 2. Create Virtual Environment
 
