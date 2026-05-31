@@ -6,11 +6,9 @@ Large novels can easily exceed the context window of an LLM, making it impossibl
 
 ## Live Demo
 
-### Frontend (Streamlit)
-https://story-companion-bfabugythims3odauzf5qv.streamlit.app/
+### Backend API (FastAPI): [https://your-fastapi-space.hf.space](https://paru-73-Story-companion.hf.space)
 
-### Backend API (FastAPI)
-[https://your-fastapi-space.hf.space](https://paru-73-Story-companion.hf.space)
+#### Live link: https://storyweave-ai-scribe.lovable.app/
 
 ## Features
 
@@ -22,13 +20,10 @@ https://story-companion-bfabugythims3odauzf5qv.streamlit.app/
 - Retrieval-Augmented Generation (RAG)
 - Gemini-powered creative responses
 - Persistent sessions using JSON storage
-- Streamlit frontend + FastAPI backend architecture
 
 ## Tech Stack
 
 - **Backend:** FastAPI, LangChain, ChromaDB, HuggingFace Embeddings, Gemini API
-
-- **Frontend:** Streamlit
 
 - **Embeddings Model:** `all-MiniLM-L6-v2`
 
@@ -65,34 +60,5 @@ Each story has:
 - its own chat sessions
 - its own retriever chain
 
-## Installation
 
-1. Clone Repository
-```bash
-git clone https://github.com/shifali0156-wq/Story-companion.git
-cd Story-Companion
-```
-2. Create Virtual Environment
-
-```bash
-python -m venv venv
-```
-
-3. Activate environment:
-
-```bash
-venv\Scripts\activate
-```
-
-4. Install Requirements
-
-```bash
-pip install -r requirements.txt
-```
-
-5. Run Frontend
-
-```bash
-streamlit run frontend.py
-```
     
