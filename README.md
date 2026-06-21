@@ -6,7 +6,7 @@ Large novels can easily exceed the context window of an LLM, making it impossibl
 
 ## Live Demo
 
-### Backend API (FastAPI): [https://your-fastapi-space.hf.space](https://paru-73-Story-companion.hf.space)
+### Backend API (FastAPI): https://paru-73-Story-companion.hf.space
 
 #### Live link: https://storyweave-ai-scribe.lovable.app/
 
